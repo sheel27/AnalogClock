@@ -7,15 +7,6 @@
   position: relative;
 }
 
-#hour,
-#minute,
-#second {
-  transform-origin: bottom;
-  /* background: black; */
-  border-radius: 5px;
-  position: absolute;
-}
-
 #hour {
   width: 1.8%;
   height: 25%;
@@ -40,16 +31,6 @@
   background-color: rgb(156, 51, 51);
 }
 
-/* #date {
-  position: relative;
-  left: 35%;
-  top: 68%;
-  width: 30%;
-  background-color: #f5f5f5;
-  font-size: x-large;
-  font-weight: bold;
-} */
-
 #date {
     position: relative;
     left: 50%;
@@ -57,16 +38,22 @@
     top: 60%;
     width: 60%;
     max-width: 300px;
-    /* background-color: #f5f5f5; */
     background-color: transparent;
     font-size: 2.6vw;
     color: azure;
     font-weight: bold;
-    text-align: center; /* Center the text within the date element */
+    text-align: center; 
   }
+
+#hour,
+#minute,
+#second {
+  transform-origin: bottom;
+  border-radius: 5px;
+  position: absolute;
+}
   
-  /* Media query for smaller screens */
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
     #date {
       font-size: 3.2vw;
     }
